@@ -39,6 +39,18 @@ docker run -v "$PWD"/work_dir:/home --rm -ti alpine:exec-c
 Welcome to ClangWorkShop01. thank you !!
 ```
 
+## コーディング規約
+- 提出プログラムのmain関数はコメントアウトしなさい。
+- コメントアウトするときはスラッシュ二つ```//```で書きなさい。(自作コードチェッカが/**/に非対応なため)
+    - VsCodeなら、```Ctrl(Command) + /```で可能
+- 提出プログラムの関数名やディレクトリ名は、仕様書の通りでなければならない。
+- 提出用プログラムに以下の使用は**禁止**である。検出された場合、Testerは評価を行わない。
+    - **for文**(while is ok)
+    - switch-case文
+    - define文
+    - グローバル変数
+    - 変数名にfor, define, switch-caseを含む文
+
 ## 提出方法
 1. 課題に合わせてディレクトリ作成 例: ```ex01```
 2. Testerディレクトリに```ex01```をcopy
@@ -47,39 +59,33 @@ Welcome to ClangWorkShop01. thank you !!
 make test ex01
 ```
 
-# コーディング規約
-- 提出プログラムのmain関数はコメントアウトしなさい。
-- 提出プログラムの関数名やディレクトリ名は、仕様書の通りでなければならない。
-- コメントアウトするときはスラッシュ二つ```//```で書きなさい。(自作コードチェッカが/**/に非対応なため)
-    - VsCodeなら、```Ctrl(Command) + /```で可能
-- 提出用プログラムに以下の使用は**禁止**である。検出された場合、Testerは評価を行わない。
-    - **for文**(while is ok)
-    - switch-case文
-    - define文
-    - グローバル変数
-    - 変数名にfor, define, switch-caseを含む文
-
-# 1. Hello, World!
-|Hello World!|
+# Questions
+## 1. Plus five machine
+|Plus five machine|
 |---|
 |提出するディレクトリ:ex01/|
-|提出するファイル: hello.c|
-|使用可能なライブラリ関数: printf|
+|提出するファイル: plus_five.c|
+|提出ファイルに使用可能な関数: |
 
-- 以下の出力をする関数を書きなさい。提出時にmain関数はコメントアウトすること。(コーディング規約より)
+- 天才博士は、値を入れたら必ず**プラス5されて値が返ってくる**装置を開発した。
+- 0を入れても、-1000を入れてもできるというのだから驚きだ。君には作れるだろうか？
+
+プロトタイプ例
 ```
-Hello World!
+int plus_five(int num);
 ```
-- 文字を標準出力に出力するためには、printf関数を使用すること。
 
+注意
+- チェックにmain関数を作るのを推奨する。しかし、提出時にmain関数はコメントアウトすること。(コーディング規約より)
+- オーバーフローやアンダーフローの処理には対応しなくてよい。
 
-# 2. welcome printf
+## 2. welcome printf
 
 |welcome printf|
 |---|
 |提出するディレクトリ:ex02/|
 |提出するファイル: welcome_printf.c|
-|使用可能なライブラリ関数: printf|
+|提出ファイルに使用可能な関数: printf|
 
 - 以下の出力をする関数を書きなさい。提出時にmain関数はコメントアウトすること。(コーディング規約より)
 ```
@@ -88,36 +94,38 @@ B
 C
 "" welcome! ""
 ```
+
 - 文字を標準出力に出力するためには、printf関数を使用すること。
+- "(ダブルクォーテーション)も出力に含めること
 - Testerは、welcome_printf関数を一回のみ実行して上記の出力を期待する
 
 プロトタイプ例
 ```
-void welcome_printf();
+void welcome_printf(void);
 ```
 
-# 2. Madam Alphabet, Dr Num and Sir AtMark
+## 3. Madam Alphabet, Dr Num and Sir AtMark
 
 |Sir.AtMark, Dr.num and Madam.Alphabet|
 |---|
 |提出するディレクトリ:ex03/|
 |提出するファイル: ascii_town.c|
-|使用可能なライブラリ関数: printf|
+|提出ファイルに使用可能な関数: printf|
 
 - Ascii Townには、3人の変人が住んでいることで有名だ。
-- Madam.Alphabet, Dr.Num and Sir.AtMark である。
+- Sir.AtMark, Dr.Num, Madam.Alphabetである。
 - 彼らは、特定のAscii文字を愛しており、それが出たときだけ反応するという。
 
 **1人目 Sir.AtMark**
 - Asciiコードで、```@```が出た場合のみ以下の出力をする。
 ```
-Sir.AtMark "@ is my life"
+Sir.AtMark "@ is my life."
 ```
 
 **2人目 Dr.Num**
 - Asciiコードで、数字が出たときのみ以下の出力をする。
 ```
-Dr.Num "I love ascii number"
+Dr.Num "I love ascii number."
 ```
 
 **3人目 Madam.Alphabet**
@@ -128,18 +136,23 @@ Dr.Num "I love ascii number"
 Madam.Alphabet "<current Alphabet> is one of the most beautiful Alphabet!!"
 ```
 
+プロトタイプ例
+```
+void ascii_town(void);
+```
+
 ヒント: 
 
 - この街には、頼れる男が一人いる。manコマンドを使って話を聞いてみよう。
 ```
 man Ascii
 ```
-- 型キャスト
+- Ascii 型キャスト
 
-## Clearだ、おめでとう
+# Clearだ、おめでとう
 
-# 次回予告
-# multiple FizzBuzz
+## 次回予告
+### multiple FizzBuzz
 
 |FizzBuzz|
 |---|
