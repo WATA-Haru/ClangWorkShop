@@ -115,6 +115,7 @@ void welcome_printf(void);
 - Ascii Townには、3人の変人が住んでいることで有名だ。
 - Sir.AtMark, Dr.Num, Madam.Alphabetである。
 - 彼らは、特定のAscii文字を愛しており、それが出たときだけ反応するという。
+- コードは出力と同じようにすること
 
 **1人目 Sir.AtMark**
 - Asciiコードで、```@```が出た場合のみ以下の出力をする。
@@ -139,6 +140,11 @@ Madam.Alphabet "<current Alphabet> is one of the most beautiful Alphabet!!"
 プロトタイプ例
 ```
 void ascii_town(void);
+```
+
+TODO:出力
+```
+
 ```
 
 ヒント: 
