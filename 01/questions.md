@@ -1,5 +1,7 @@
 # C language Work Shop 01
 
+**あなたは苦しむだろう、しかし、その分大いなる力がつくだろう**
+
 repository dir tree
 ```
 ClangWorkShop
@@ -44,10 +46,6 @@ Welcome to ClangWorkShop01. thank you !!
 ```
 make test ex01
 ```
-一気にテストする場合
-```
-make alltest
-```
 
 # コーディング規約
 - 提出プログラムのmain関数はコメントアウトしなさい。
@@ -61,52 +59,95 @@ make alltest
     - グローバル変数
     - 変数名にfor, define, switch-caseを含む文
 
-# 1. welcome printf
-
-|welcome_printf|
+# 1. Hello, World!
+|Hello World!|
 |---|
 |提出するディレクトリ:ex01/|
+|提出するファイル: hello.c|
+|使用可能なライブラリ関数: printf|
+
+- 以下の出力をする関数を書きなさい。提出時にmain関数はコメントアウトすること。(コーディング規約より)
+```
+Hello World!
+```
+- 文字を標準出力に出力するためには、printf関数を使用すること。
+
+
+# 2. welcome printf
+
+|welcome printf|
+|---|
+|提出するディレクトリ:ex02/|
 |提出するファイル: welcome_printf.c|
 |使用可能なライブラリ関数: printf|
 
-以下の出力をする関数を書きなさい。提出時にmain関数はコメントアウトすること。(コーディング規約より)
+- 以下の出力をする関数を書きなさい。提出時にmain関数はコメントアウトすること。(コーディング規約より)
 ```
 A
 B
 C
-welcome!
+"" welcome! ""
 ```
+- 文字を標準出力に出力するためには、printf関数を使用すること。
+- Testerは、welcome_printf関数を一回のみ実行して上記の出力を期待する
 
 プロトタイプ例
 ```
 void welcome_printf();
 ```
 
-文字を標準出力に出力するためには、printf関数を使用すること。
-```
-printf("hogehogehogehoge");
-```
+# 2. Madam Alphabet, Dr Num and Sir AtMark
 
-# 2.  
-
-
-# 2. Madam Alphabet, Dr num and Sir AtMark
-
-Ascii, char , number , atMark /Asciiコードを触る。AtMarkの時だけ、変なアウトプットの処理をさせる
-
-|Madam.Alphabet, Dr.num and Sir.AtMark|
+|Sir.AtMark, Dr.num and Madam.Alphabet|
 |---|
-||
-||
+|提出するディレクトリ:ex03/|
+|提出するファイル: ascii_town.c|
+|使用可能なライブラリ関数: printf|
 
+- Ascii Townには、3人の変人が住んでいることで有名だ。
+- Madam.Alphabet, Dr.Num and Sir.AtMark である。
+- 彼らは、特定のAscii文字を愛しており、それが出たときだけ反応するという。
 
-```Hint
+**1人目 Sir.AtMark**
+- Asciiコードで、```@```が出た場合のみ以下の出力をする。
+```
+Sir.AtMark "@ is my life"
+```
+
+**2人目 Dr.Num**
+- Asciiコードで、数字が出たときのみ以下の出力をする。
+```
+Dr.Num "I love ascii number"
+```
+
+**3人目 Madam.Alphabet**
+- 一番のボスだ。
+- Asciiコードで、大文字、小文字のアルファベットが出たときのみ以下の出力をする。
+- <current Alphabet>には、現在のアルファベットを出力すること
+```
+Madam.Alphabet "<current Alphabet> is one of the most beautiful Alphabet!!"
+```
+
+ヒント: 
+
+- この街には、頼れる男が一人いる。manコマンドを使って話を聞いてみよう。
+```
 man Ascii
 ```
+- 型キャスト
 
-# 3. FizzBuzzをC言語で実装しよう。
+## Clearだ、おめでとう
 
+# 次回予告
+# multiple FizzBuzz
 
+|FizzBuzz|
+|---|
+|提出するディレクトリ: Coming Soon...|
+|提出するファイル: Coming Soon...|
+|使用可能なライブラリ関数: printf|
+-  1000までに対応するfizzbuzz
+-  変更可能性があります
 
 # Q & A
 **Q. なぜこのような問題なのですか？**
