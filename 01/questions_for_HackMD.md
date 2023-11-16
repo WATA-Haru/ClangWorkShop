@@ -1,6 +1,16 @@
-# C language Work Shop 01
+<div style="text-align: center;">
+    <h1> C language Work Shop 01 </h1>
+</div>
 
-**あなたは苦しむだろう、しかし、その分大いなる力がつくだろう**
+<image width=50% style="display: block; margin: auto;" src=https://hackmd.io/_uploads/ryFqO3XVT.png></image>
+
+
+<div style="text-align: center;">
+    <h3> あなたは苦しむだろう、しかし、その分大いなる力がつくだろう</h3>
+</div>
+
+
+# Introductions
 
 repository dir tree
 ```
@@ -12,8 +22,6 @@ ClangWorkShop
 |       └── welcome_workshop.c
 └──README.md
 ```
-
-# Introductions
 
 ## 実行環境の作成方法
 1. ワークショップのrepositoryをclone
@@ -220,6 +228,8 @@ man Ascii
 :hand: Ascii 型キャスト
 :::
     
+ Clearだ、おめでとう
+
 ## 次回予告
 ### multiple FizzBuzz
 
