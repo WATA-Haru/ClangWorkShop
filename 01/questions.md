@@ -9,7 +9,7 @@ ClangWorkShop
 |   ├── Dockerfile
 |   └── work_dir/
 |       └── Tester/
-|       └── hoge.c
+|       └── welcome_workshop.c
 └──README.md
 ```
 # Introductions
@@ -34,8 +34,8 @@ docker run -v "$PWD"/work_dir:/home --rm -ti alpine:exec-c
 実行例
 ```
 6a333c246e82:# cd /home
-6a333c246e82:# gcc welcome.c -o welcome
-6a333c246e82:# ./welcome
+6a333c246e82:# gcc welcome_workshop.c
+6a333c246e82:# ./a.out
 Welcome to ClangWorkShop01. thank you !!
 ```
 
