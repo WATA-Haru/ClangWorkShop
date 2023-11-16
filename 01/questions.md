@@ -55,8 +55,27 @@ Welcome to ClangWorkShop01. thank you !!
 1. 課題に合わせてディレクトリ作成 例: ```ex01```
 2. Testerディレクトリに```ex01```をcopy
 3. Testerディレクトリ内で以下のコマンドを入力
+
+unit test
 ```
-make test ex01
+make test01
+make test02
+make test03
+```
+
+all test
+```
+make all
+```
+
+remove executable file
+```
+make clean
+```
+
+remove all output file including ex01.txt, ex02.txt ex03.txt)
+```
+make fclean
 ```
 
 # Questions
