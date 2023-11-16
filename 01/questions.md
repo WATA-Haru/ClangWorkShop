@@ -156,7 +156,6 @@ void ascii_town(void);
 @: Sir.AtMark "@ is my life."
 A: Madam.Alphabet "A is one of the most beautiful Alphabet!!"
 B: Madam.Alphabet "B is one of the most beautiful Alphabet!!"
-C
 ```
 
 ヒント: 
