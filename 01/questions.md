@@ -142,9 +142,21 @@ Madam.Alphabet "<current Alphabet> is one of the most beautiful Alphabet!!"
 void ascii_town(void);
 ```
 
-TODO:出力
+出力は、Asciiコードから順に、全て以下のようにすること。スペースの数等が間違っていた場合はエラーとして判定されるので気を付けること
 ```
-
+7: Dr.Num "I love ascii number."
+8: Dr.Num "I love ascii number."
+9: Dr.Num "I love ascii number."
+::
+;:
+<:
+=:
+>:
+?:
+@: Sir.AtMark "@ is my life."
+A: Madam.Alphabet "A is one of the most beautiful Alphabet!!"
+B: Madam.Alphabet "B is one of the most beautiful Alphabet!!"
+C
 ```
 
 ヒント: 
