@@ -28,7 +28,7 @@ cd ClanWorkShop/01
 - 以下のコマンドを入力(Cの実行環境をbuildして、work_dirをdocker内のhomeにマウントしている)
 ```
 docker build -t alpine:exec-c .
-docker run -v "$PWD"/work_dir:/home --rm -ti alpine:exec-c
+docker run -v "$PWD"/work_dir:/home --rm -ti alpine:exec-c /bin/bash
 ```
 
 実行例
