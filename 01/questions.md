@@ -56,7 +56,7 @@ Welcome to ClangWorkShop01. thank you !!
 2. Testerディレクトリに```ex01```をcopy
 3. Testerディレクトリ内で以下のコマンドを入力
 ```
-make test ex01
+make ex01
 ```
 
 # Questions
